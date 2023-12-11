@@ -34,6 +34,18 @@ Within the developers local environment and with debugging support, running the 
 * Reactive Stream : Nonblocking HTTP Transports
 * Reactive JSON Mapper: 3rnd party library used
 
+## Build, Deploy, Run - Instructions
+Dockerize the application
+```
+$ docker build -t apireader:v1.0 .
+$ docker run -d -p 8080:8080 --cpu-shares=20000 --memory=200M  docker.io/library/apireader:v1.0
+```
+Cleanup
+```
+$ docker ps -a
+$ docker rm docker rm -f <CONTAINER ID>
+$ docker rmi <IMAGE ID>
+```
 
 # Getting Started
 ### Reference Documentation
