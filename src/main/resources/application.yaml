@@ -1,0 +1,14 @@
+
+  
+netty.http.pool:
+  maxConnection: 1
+  maxIdleTimeInSeconds: 20 # maximum time for a connection to stay idle to 20 seconds
+  maxLifeTimeInSeconds: 60 # maximum time for a connection to stay alive
+  pendingAcquireTimeout: 60 # maximum time for the pending acquire operation
+  evictTimeInSeconds: 120 # connection pool is regularly checked for connections that are applicable for removal
+  
+  
+
+api:
+  countries: https://restcountries.com/v3.1/all
+  # countries: https://restcountries.com/v3.1/name/deutschland
