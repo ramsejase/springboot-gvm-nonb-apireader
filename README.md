@@ -43,7 +43,7 @@ $ docker run -d -p 8080:8080 --cpu-shares=20000 --memory=200M  docker.io/library
 Cleanup
 ```
 $ docker ps -a
-$ docker rm docker rm -f <CONTAINER ID>
+$ docker rm -f <CONTAINER ID>
 $ docker rmi <IMAGE ID>
 ```
 
