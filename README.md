@@ -23,8 +23,13 @@ Within the developers local environment and with debugging support, running the 
 ## Problem Solution:
 1. With new Java21 GraalVM we can elevate the performance of the application to utilize the memory appropritely.
 2. Within the dockerized environment, the application setup can help to mimic the CPU, Memory usage used in the realtime.
-3. Avoid timout issues for the client call, the source api can integrated the reactive non-blocking approach
+3. Avoid timout issues for the client call, the reactive non-blocking approach is applied to get the reponse as stream.
 
+### API Endpoints
+```
+http://localhost:8080/health
+http://localhost:8080/allcountry
+```
 
 ## Technologies:
 * Containerized : Docker (Layered)
